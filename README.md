@@ -6,6 +6,7 @@
 
 ## **🚀 Visão Geral**
 Este projeto é um sistema de cadastro de veículos desenvolvido em **Django**, onde é possível:
+
 ✅ Adicionar produtos com nome, descrição, preço e quantidade  
 📝 Dashboard para listar todos os produtos cadastrados  
 ✏️ Editar informações dos produtos  
