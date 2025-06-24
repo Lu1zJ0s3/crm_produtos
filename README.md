@@ -12,7 +12,7 @@ Este projeto é um sistema de cadastro de veículos desenvolvido em **Django**, 
 ✏️ Editar informações dos produtos  
 ❌ Excluir produtos do sistema  
 
-O objetivo é proporcionar uma gestão fácil e eficiente de veículos para administradores.
+O objetivo é proporcionar uma gestão fácil e eficiente de produtos para administradores.
 
 ---
 
