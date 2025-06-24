@@ -1,0 +1,55 @@
+{% extends 'crm/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+  <h1 class="mb-4">Dashboard</h1>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card text-white bg-primary mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Total de Produtos</h5>
+          <p class="card-text display-6">{{ total_products }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-white bg-success mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Total de Vendas</h5>
+          <p class="card-text display-6">{{ total_sales }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-white bg-warning mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Receita Total</h5>
+          <p class="card-text display-6">R$ {{ revenue|floatformat:2 }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mt-4">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <span>Últimos Produtos Adicionados</span>
+      <a href="{% url 'registrar_venda' %}" class="btn btn-sm btn-success">
+        Registrar Nova Venda
+      </a>
+    </div>
+    <div class="card-body">
+      <ul class="list-group">
+        {% for produto in latest_products %}
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            {{ produto.name }}
+            <span class="badge bg-secondary">{{ produto.created_at|date:"d/m/Y" }}</span>
+          </li>
+        {% empty %}
+          <li class="list-group-item">Nenhum produto cadastrado recentemente.</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

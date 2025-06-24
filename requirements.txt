@@ -1,0 +1,9 @@
+Django
+djangorestframework
+fastapi
+uvicorn
+python-dotenv
+psycopg2-binary
+drf-yasg
+python-jose
+passlib
