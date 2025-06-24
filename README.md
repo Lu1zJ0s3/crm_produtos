@@ -1,11 +1,11 @@
 # ** Cadastro de Produtos com Django**
 
-**Uma aplicação web para cadastrar, listar, editar e excluir veículos de forma simples e prática.**
+**Uma aplicação web para cadastrar, listar, editar e excluir produtos de forma simples e prática.**
 
 ---
 
 ## **🚀 Visão Geral**
-Este projeto é um sistema de cadastro de veículos desenvolvido em **Django**, onde é possível:
+Este projeto é um sistema de cadastro de produtos desenvolvido em **Django**, onde é possível:
 
 ✅ Adicionar produtos com nome, descrição, preço e quantidade  
 📝 Dashboard para listar todos os produtos cadastrados  
