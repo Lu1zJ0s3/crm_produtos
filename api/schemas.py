@@ -50,6 +50,7 @@ class Sale(SaleBase):
     id: int
     created_at: datetime
     sold_by: User
+    product: "Product"
 
     class Config:
         from_attributes = True
